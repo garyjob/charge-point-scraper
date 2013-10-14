@@ -27,13 +27,13 @@ class ChargePointScraper
     request.post options, (error, response, body)->
 
       if /Available/.test body
-        callback false, 1
+        callback && callback false, 1
 
       else if /In Use/.test body
-        callback false, 0
+        callback && callback false, 0
 
       else 
-        callback 'no working', false
+        callback && callback 'no working', false
 
 
 
