@@ -7,12 +7,17 @@ A wrapper class extracts the availability status of a particular charge point gi
 - CoffeeScript
 
 # Installation
-npm install charge-point-scraper
+    npm install charge-point-scraper
 
 # Usage
     
+    # Import class
     ChargePointScraper = require 'charge-point-scraper'
+    
+    # Instantiate
     cp = new ChargePointScraper()
+    
+    # To get status
     cp.getStatus '18193', (status)->
       console.log status 
     
