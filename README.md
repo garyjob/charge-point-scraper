@@ -18,6 +18,8 @@ A wrapper class extracts the availability status of a particular charge point gi
     cp = new ChargePointScraper()
     
     # To get status
-    cp.getStatus '18193', (status)->
+    cp.getStatus '18193', (err, status)->
+      # 1 — when is available
+      # 0 - when is in use
       console.log status 
     
