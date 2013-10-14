@@ -2,7 +2,7 @@
   "author": "Gary Teh <garyjob@gmail.com>"
   , "name": "charge-point-scraper"
   , "main": "./charge_point.coffee"
-  , "version": "0.0.2"  
+  , "version": "0.0.3"  
   , "engines": {
     "node": "=0.8.8"
   }
